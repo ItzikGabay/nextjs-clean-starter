@@ -3,14 +3,15 @@
     "browser": true,
     "es2021": true
   },
-  "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "next/babel",
-    "next/core-web-vitals",
-    "next/core-web-vitals"
-  ],
+  "extends": ["eslint:recommended", "plugin:react/recommended", "next/core-web-vitals", "google"],
   "plugins": ["react"],
-  "rules": {},
+  "rules": {
+    // suppress errors for missing 'import React' in files
+    "react/react-in-jsx-scope": "off",
+    // allow jsx syntax in js files
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }], 
+    "react/jsx-one-expression-per-line": "off",
+    "object-curly-spacing": ["error", "always"]
+  },
   "ignorePatterns": ["./*.test.ts"]
 }
