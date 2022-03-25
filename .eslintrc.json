@@ -11,5 +11,6 @@
     "next/core-web-vitals"
   ],
   "plugins": ["react"],
-  "rules": {}
+  "rules": {},
+  "ignorePatterns": ["./*.test.ts"]
 }
