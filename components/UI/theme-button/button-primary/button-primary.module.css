@@ -1,3 +1,6 @@
 .button_primary__container {
-  font-size: 8px;
+  font-size: 18px;
+  background-color: purple;
+  color: white;
+  border: none;
 }

@@ -3,11 +3,9 @@ import ButtonPrimary from '../components/UI/theme-button/button-primary/button-p
 import stylesheet from '../styles/pages/home.module.css';
 
 const Home = () => {
-  const test = 0;
-
   return (
     <div className={stylesheet.container}>
-      <div>Home Index {test}</div>
+      <div>Homepage is ready.</div>
       <ButtonPrimary />
     </div>
   );
